@@ -9,4 +9,5 @@
     <string name="input_hint">Enter value</string>
     <string name="enter_value_warning">Please enter a value.</string>
     <string name="invalid_input">Invalid input.</string>
+    <string name="app_icon">App Icon</string>
 </resources>

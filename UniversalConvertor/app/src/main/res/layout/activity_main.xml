@@ -12,17 +12,30 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- App Title -->
-        <TextView
-            android:id="@+id/titleBar"
-            android:layout_width="match_parent"
+        <!-- App Title with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_bar"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="24dp"
-            android:textColor="@color/purple_700" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/titleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_bar"
+                android:textColor="@color/purple_700"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <!-- Category Section -->
         <TextView
